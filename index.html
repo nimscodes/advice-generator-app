@@ -5,29 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      
+      <h4>Advice #<span id="number">117</span></h4>
+      <p><q id="quote">It is easy to sit up and take notice, what's difficult is getting up and taking action.</q></p>
+      <div class="divider">
+        <img class="desktop" src="./images/pattern-divider-desktop.svg" alt="divider-desktop">
+        <img class="mobile" src="./images/pattern-divider-mobile.svg" alt="mobile">
+      </div>
+      <div class="dice"><img src="./images/icon-dice.svg" alt=""></div>
     </div>
   </div>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">@nimscodes</a>.
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>

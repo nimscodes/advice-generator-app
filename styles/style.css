@@ -1,28 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
-:root{
-    /* Typrograpphy */
-    --font-size: 28px;
-    --manrope: 'Manrope', sans-serif;
-    --font-weight: 800;
+:root {
+  /* Typrograpphy */
+  --font-size: 28px;
+  --manrope: "Manrope", sans-serif;
+  --font-weight: 800;
 
-    /* Colors */
-    --Light-Cyan: hsl(193, 38%, 86%);
-    --Neon-Green: hsl(150, 100%, 66%);
+  /* Colors */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
 
-    --Grayish-Blue: hsl(217, 19%, 38%);
-    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
-    --Dark-Blue: hsl(218, 23%, 16%);
-
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
 }
 
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html{
-    width: 100%;
-    height: 100vh;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background: var(--Dark-Blue);
+  color: var(--Light-Cyan);
+  font-family: var(--manrope);
+}
+
+.container {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--Light-Cyan);
+  text-align: center;
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.card > h4 {
+font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: var(--Neon-Green);
+}
+
+.card > p {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.divider {
+  margin-bottom: 2rem;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: block;
+}
+
+.dice {
+  width: 64px;
+  aspect-ratio: 1;
+  background-color: var(--Neon-Green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -32px;
+  cursor: pointer;
+}
+
+.dice:hover{
+    box-shadow: 0 0 10px 5px var(--Neon-Green);
+    transition: box-shadow 500ms ease-out;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 12px;
+}
+
+.attribution a {
+  color: var(--Neon-Green);
+}
+
+@media (max-width: 550px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .card > h4 {
+        font-size: 16px;
+      }
+      
+      .card > p {
+        font-size: 20px;
+        line-height: 24px;
+      }
 }
