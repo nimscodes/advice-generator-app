@@ -46,16 +46,20 @@ html {
 
 .card {
   position: relative;
+
   width: 90%;
   max-width: 600px;
   height: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
   background-color: var(--Dark-Grayish-Blue);
   color: var(--Light-Cyan);
+
   text-align: center;
   padding: 3rem;
   border-radius: 16px;
@@ -100,8 +104,10 @@ font-size: 20px;
 }
 
 .dice:hover{
-    box-shadow: 0 0 10px 5px var(--Neon-Green);
+    box-shadow: 0 0 15px 5px var(--Neon-Green);
+    -moz-box-shadow: 0 0 15px 5px var(--Neon-Green);
     transition: box-shadow 500ms ease-out;
+    -moz-transition: box-shadow 500ms ease-out;
 }
 
 .attribution {
@@ -111,6 +117,7 @@ font-size: 20px;
 
 .attribution a {
   color: var(--Neon-Green);
+  cursor: pointer;
 }
 
 @media (max-width: 550px){
